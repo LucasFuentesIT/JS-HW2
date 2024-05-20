@@ -1,0 +1,224 @@
+body {
+    background-color: 80808021;
+}
+
+body>a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+header {
+    background-color: #23a4a5;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav,
+footer {
+    background-color: #1a7b7a;
+    height: 50px;
+}
+
+nav {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav>a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+nav>a:hover {
+    color: #0c3b41;
+}
+
+.actual {
+    color: #0c3b41;
+    padding: 5px;
+    background-color: #23e6e3;
+    border: 3px solid #23e6e3;
+
+}
+
+nav img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+h1 {
+    display: inline;
+    color: white;
+    margin: auto auto;
+}
+
+main {
+    width: 80%;
+    margin: 15px auto;
+}
+
+
+
+.game {
+    position: relative;
+    text-decoration: none;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: #23a4a5;
+    margin-top: 15px;
+    color: black;
+
+}
+
+.gameBox {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+
+}
+
+.game:hover {
+    left: 150px;
+    background-color: red;
+    color: white;
+}
+
+.game:active {
+    color: blue;
+    background-color: rgb(0, 255, 0);
+}
+
+
+.pets {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadro {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    border: 3px solid #31bac9;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.cuadro img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+/* cuando se pase por arriba agrandar la imagen  */
+.cuadro:hover img, .cuadro:focus img {
+    padding: 0px;
+    width: 100%;
+    transition: 0.4s;
+
+}
+
+/* Como hacer para modificar al padre del hijo con hover */
+/* .cuadro:hover {
+    padding: 0px;
+} */
+
+.cuadro p {
+    display: none;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1.1em;
+    color: #333;
+}
+
+
+.divisores {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+.divisores p {
+    font-size: xx-large;
+    margin: 0 auto;
+}
+
+
+.pais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.travel .cuadro {
+    width: 40%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: auto 0px auto 15px;
+    color: white;
+}
+
+footer a {
+    height: 70%;
+    margin-right: 15px;
+
+}
+
+.gitHub {
+    border: 1px solid black;
+    height: 100%;
+
+}
+
+
+.hide:not(:focus) {
+    position: relative;
+    right: 100000px;
+}
+
+
+
+
+.aboutMe {
+    display: flex;
+}
+
+.myPhoto {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+
+}
+
+
+.description {
+    margin-top: 40px;
+}
+
+
+
+/* usar el :nth-child() para hacer que las imagenes tengan explicacion al costado pares a la derecha impares a la izquierda */
